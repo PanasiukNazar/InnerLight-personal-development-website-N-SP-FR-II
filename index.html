@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Inner Light</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="développement web, programmation, technologies web, création de site, développement front-end, développement back-end"
+            name="keywords"
+        />
+        <meta
+            content="Découvrez nos ressources et actualités dédiées au développement web. Apprenez les meilleures pratiques en programmation et améliorez vos compétences techniques."
+            name="description"
+        />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div
+                class="spinner-grow text-primary"
+                style="width: 3rem; height: 3rem"
+                role="status"
+            >
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <a
+                href="index.html"
+                class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+            >
+                <h1 class="m-0 text-primary">Inner Light</h1>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active"
+                        >Accueil</a
+                    >
+                    <a href="#about" class="nav-item nav-link">À propos</a>
+                    <a href="#service" class="nav-item nav-link">Services</a>
+                    <a href="#team" class="nav-item nav-link">Équipe</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-primary p-0 mb-5">
+            <div
+                class="row g-0 align-items-center flex-column-reverse flex-lg-row"
+            >
+                <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-white mb-5">
+                        Votre partenaire pour le développement web performant
+                    </h1>
+                    <div class="row g-4">
+                        <div class="col-sm-4">
+                            <div class="border-start border-light ps-4">
+                                <h2
+                                    class="text-white mb-1"
+                                    data-toggle="counter-up"
+                                >
+                                    45
+                                </h2>
+                                <p class="text-light mb-0">
+                                    Experts en développement
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="border-start border-light ps-4">
+                                <h2
+                                    class="text-white mb-1"
+                                    data-toggle="counter-up"
+                                >
+                                    41
+                                </h2>
+                                <p class="text-light mb-0">Projets réalisés</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="border-start border-light ps-4">
+                                <h2
+                                    class="text-white mb-1"
+                                    data-toggle="counter-up"
+                                >
+                                    831
+                                </h2>
+                                <p class="text-light mb-0">
+                                    Clients satisfaits
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item position-relative">
+                            <img
+                                class="img-fluid"
+                                src="img/carousel-1.jpg"
+                                alt=""
+                            />
+                            <div class="owl-carousel-text">
+                                <h1 class="display-1 text-white mb-0">
+                                    Construisez des sites web modernes et
+                                    réactifs avec nos solutions
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="owl-carousel-item position-relative">
+                            <img
+                                class="img-fluid"
+                                src="img/carousel-2.jpg"
+                                alt=""
+                            />
+                            <div class="owl-carousel-text">
+                                <h1 class="display-1 text-white mb-0">
+                                    Boostez votre présence en ligne grâce à des
+                                    technologies innovantes
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="owl-carousel-item position-relative">
+                            <img
+                                class="img-fluid"
+                                src="img/carousel-3.jpg"
+                                alt=""
+                            />
+                            <div class="owl-carousel-text">
+                                <h1 class="display-1 text-white mb-0">
+                                    Développez des applications performantes et
+                                    sécurisées avec Inner Light
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- About Start -->
+        <div id="about" class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="d-flex flex-column">
+                            <img
+                                class="img-fluid rounded w-75 align-self-end"
+                                src="img/about-1.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="img-fluid rounded w-50 bg-white pt-3 pe-3"
+                                src="img/about-2.jpg"
+                                alt=""
+                                style="margin-top: -25%"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p class="d-inline-block border rounded-pill py-1 px-4">
+                            À propos
+                        </p>
+                        <h1 class="mb-4">
+                            Pourquoi choisir Inner Light pour vos projets web ?
+                        </h1>
+                        <p>
+                            Chez Inner Light, notre priorité est de vous
+                            accompagner dans la réussite de vos projets
+                            numériques. Notre équipe d’experts maîtrise les
+                            dernières technologies web, du front-end au
+                            back-end, pour créer des solutions sur mesure qui
+                            répondent à vos besoins spécifiques.
+                        </p>
+                        <p class="mb-4">
+                            Nous nous engageons à fournir des applications
+                            performantes, sécurisées et évolutives. Grâce à
+                            notre savoir-faire en développement web, nous
+                            transformons vos idées en produits digitaux
+                            innovants, tout en assurant un support et une
+                            maintenance de qualité.
+                        </p>
+                        <p>
+                            <i class="far fa-check-circle text-primary me-3"></i
+                            >Conception personnalisée
+                        </p>
+                        <p>
+                            <i class="far fa-check-circle text-primary me-3"></i
+                            >Technologies modernes
+                        </p>
+                        <p>
+                            <i class="far fa-check-circle text-primary me-3"></i
+                            >Support et maintenance
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <div id="service" class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                >
+                    <p class="d-inline-block border rounded-pill py-1 px-4">
+                        Services
+                    </p>
+                    <h1>Découvrez nos services de développement web</h1>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <div
+                                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                                style="width: 65px; height: 65px"
+                            >
+                                <i
+                                    class="fa fa-solid fa-code text-primary fs-4"
+                                ></i>
+                            </div>
+                            <h4 class="mb-3">
+                                Conception et développement sur mesure
+                            </h4>
+                            <p class="mb-4">
+                                Nous créons des solutions web personnalisées
+                                adaptées aux besoins spécifiques de votre
+                                entreprise. De la planification à la mise en
+                                œuvre, nous garantissons un site performant,
+                                ergonomique et évolutif.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <div
+                                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                                style="width: 65px; height: 65px"
+                            >
+                                <i
+                                    class="fa fa-solid fa-mobile-screen-button text-primary fs-4"
+                                ></i>
+                            </div>
+                            <h4 class="mb-3">
+                                Développement d'applications mobiles
+                            </h4>
+                            <p class="mb-4">
+                                Nous concevons des applications mobiles
+                                intuitives et performantes, compatibles avec
+                                toutes les plateformes majeures, pour améliorer
+                                la présence digitale et l'engagement de vos
+                                utilisateurs.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <div
+                                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                                style="width: 65px; height: 65px"
+                            >
+                                <i
+                                    class="fa fa-solid fa-cloud text-primary fs-4"
+                                ></i>
+                            </div>
+                            <h4 class="mb-3">
+                                Solutions cloud et hébergement sécurisé
+                            </h4>
+                            <p class="mb-4">
+                                Nous proposons des solutions d’hébergement cloud
+                                fiables et sécurisées pour assurer la
+                                disponibilité et la protection optimale de vos
+                                données et applications.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <div
+                                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                                style="width: 65px; height: 65px"
+                            >
+                                <i
+                                    class="fa fa-solid fa-paint-brush text-primary fs-4"
+                                ></i>
+                            </div>
+                            <h4 class="mb-3">Design UX/UI innovant</h4>
+                            <p class="mb-4">
+                                Nos experts en design créent des interfaces
+                                utilisateurs intuitives et modernes,
+                                garantissant une expérience fluide et engageante
+                                sur tous vos supports numériques.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <div
+                                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                                style="width: 65px; height: 65px"
+                            >
+                                <i
+                                    class="fa fa-solid fa-lock text-primary fs-4"
+                                ></i>
+                            </div>
+                            <h4 class="mb-3">Sécurité et maintenance</h4>
+                            <p class="mb-4">
+                                Nous assurons la protection de vos systèmes et
+                                la maintenance continue de vos projets digitaux
+                                pour garantir leur performance, leur sécurité et
+                                leur mise à jour constante.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="service-item bg-light rounded h-100 p-5">
+                            <div
+                                class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                                style="width: 65px; height: 65px"
+                            >
+                                <i
+                                    class="fa fa-solid fa-chart-simple text-primary fs-4"
+                                ></i>
+                            </div>
+                            <h4 class="mb-3">
+                                Optimisation des performances web
+                            </h4>
+                            <p class="mb-4">
+                                Nous optimisons la vitesse, la compatibilité et
+                                le référencement de vos sites afin d'améliorer
+                                l'expérience utilisateur et d'augmenter votre
+                                visibilité en ligne.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Feature Start -->
+        <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+            <div class="container feature px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div
+                        class="col-lg-6 feature-text py-5 wow fadeIn"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="p-lg-5 ps-lg-0">
+                            <h1 class="text-white mb-4">
+                                Pourquoi nous choisir ?
+                            </h1>
+                            <p class="text-white mb-4 pb-2">
+                                Nous ne sommes pas seulement des développeurs,
+                                nous sommes vos partenaires dans la
+                                transformation digitale. Avec une approche sur
+                                mesure et un engagement fort pour la qualité,
+                                nous accompagnons votre projet de bout en bout.
+                                Notre expertise couvre tout le cycle de
+                                développement, de la conception au déploiement,
+                                avec un accent particulier sur la performance,
+                                la sécurité et l'ergonomie. Choisir notre
+                                équipe, c’est opter pour une collaboration
+                                transparente et une solution digitale adaptée à
+                                vos besoins réels. Laissez-nous vous aider à
+                                concrétiser vos idées en applications
+                                performantes et durables.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 pe-lg-0 wow fadeIn"
+                        data-wow-delay="0.5s"
+                        style="min-height: 400px"
+                    >
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute img-fluid w-100 h-100"
+                                src="img/feature.jpg"
+                                style="object-fit: cover"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- Team Start -->
+        <div id="team" class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                >
+                    <p class="d-inline-block border rounded-pill py-1 px-4">
+                        Équipe
+                    </p>
+                    <h1>Notre équipe expérimentée</h1>
+                </div>
+                <div class="row g-4">
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Julien M.</h5>
+                                <p class="text-primary">Chef de projet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Élodie B.</h5>
+                                <p class="text-primary">
+                                    Développeuse front-end
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Lucas D.</h5>
+                                <p class="text-primary">Développeur back-end</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.7s"
+                    >
+                        <div
+                            class="team-item position-relative rounded overflow-hidden"
+                        >
+                            <div class="overflow-hidden">
+                                <img
+                                    class="img-fluid"
+                                    src="img/team-4.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="team-text bg-light text-center p-4">
+                                <h5>Claire V.</h5>
+                                <p class="text-primary">Designer UX/UI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto mb-5 wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                >
+                    <p class="d-inline-block border rounded-pill py-1 px-4">
+                        Témoignages
+                    </p>
+                    <h1>Ce que disent nos clients développeurs !</h1>
+                </div>
+                <div
+                    class="owl-carousel testimonial-carousel wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <div class="testimonial-item text-center">
+                        <img
+                            class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                            src="img/testimonial-1.jpg"
+                            style="
+                                width: 100px;
+                                height: 100px;
+                                object-fit: cover;
+                            "
+                        />
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>
+                                Grâce à l'accompagnement de cette plateforme,
+                                j'ai pu améliorer mes compétences en
+                                développement web et comprendre les meilleures
+                                pratiques pour structurer mes projets. Leur
+                                expertise technique m'a permis de gagner en
+                                confiance et d'optimiser mes processus de
+                                travail.
+                            </p>
+                            <h5 class="mb-1">Émilie D.</h5>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img
+                            class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                            src="img/testimonial-2.jpg"
+                            style="
+                                width: 100px;
+                                height: 100px;
+                                object-fit: cover;
+                            "
+                        />
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>
+                                En tant que développeur débutant, j'ai trouvé
+                                sur cette plateforme des ressources claires et
+                                précises qui m'ont aidé à maîtriser les bases du
+                                développement front-end. Leur accompagnement
+                                personnalisé m'a permis de progresser rapidement
+                                et d'aborder mes projets avec sérénité.
+                            </p>
+                            <h5 class="mb-1">Lucas M.</h5>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <img
+                            class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+                            src="img/testimonial-3.jpg"
+                            style="
+                                width: 100px;
+                                height: 100px;
+                                object-fit: cover;
+                            "
+                        />
+                        <div class="testimonial-text rounded text-center p-4">
+                            <p>
+                                L'équipe de cette plateforme m'a offert un
+                                soutien technique remarquable pour développer
+                                mes applications web. Leur expertise et leurs
+                                conseils pratiques m'ont permis d'améliorer la
+                                qualité de mon code et d'optimiser les
+                                performances de mes projets.
+                            </p>
+                            <h5 class="mb-1">Julien P.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Contact Start -->
+        <div id="contact" class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-light rounded p-5">
+                            <p
+                                class="d-inline-block border rounded-pill py-1 px-4"
+                            >
+                                Contactez-nous
+                            </p>
+                            <h1 class="mb-4">
+                                Une question sur le développement web ?
+                                Contactez-nous !
+                            </h1>
+                            <form action="thanks.html" method="get">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="name"
+                                                placeholder="Votre nom"
+                                                required
+                                            />
+                                            <label for="name">Votre nom</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="email"
+                                                placeholder="Votre e-mail"
+                                                required
+                                            />
+                                            <label for="email"
+                                                >Votre e-mail</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="subject"
+                                                placeholder="Sujet"
+                                                required
+                                            />
+                                            <label for="subject">Sujet</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea
+                                                class="form-control"
+                                                placeholder="Laissez votre message ici"
+                                                id="message"
+                                                style="height: 100px"
+                                                required
+                                            ></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button
+                                            class="btn btn-primary w-100 py-3"
+                                            type="submit"
+                                            id="submit"
+                                        >
+                                            Envoyer le message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Inner Light</h5>
+                        <p>
+                            Restez connectés avec nous pour découvrir nos
+                            services d’accompagnement en développement web.
+                            Notre plateforme vous guide pour créer des sites
+                            performants et optimiser vos projets numériques.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Adresse</h5>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>
+                            Kurfürstendamm, Kranzler Eck 22/4th floor, 10719
+                            Berlin, Deutschland
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i>+493086321840
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i
+                            >anlage_strategie@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Liens rapides</h5>
+                        <a class="btn btn-link" href="index.html">Accueil</a>
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Politique de confidentialité</a
+                        >
+                        <a class="btn btn-link" href="cookie-policy.html"
+                            >Politique de cookies</a
+                        >
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Conditions générales d’utilisation</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Consentement aux cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Ce site utilise des cookies pour vous offrir une meilleure
+                    expérience de navigation.
+                    <a href="cookie-policy.html">En savoir plus...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Accepter</button>
+                <button class="cookie-button" id="declineBtn">Refuser</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
